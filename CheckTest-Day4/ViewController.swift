@@ -32,7 +32,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func back() {
-        
     }
     
     @IBAction func next() {
@@ -40,15 +39,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func first() {
-        
+        machineUILabel.text = name[index]
     }
     
     @IBAction func second() {
-        
+        machineUILabel.text = name[1]
+
     }
     
     @IBAction func third() {
-        
+        machineUILabel.text = name[2]
+
     }
     
     
