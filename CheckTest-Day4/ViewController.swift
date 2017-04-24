@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         }
     }
     
+    
     @IBAction func back() {
         if name[0] == machineUILabel.text  {
             machineUILabel.text = name[0]
