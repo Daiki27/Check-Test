@@ -22,7 +22,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
         machineUILabel.text = name[index]
     }
 
@@ -31,11 +30,24 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func back() {
+    @IBAction func next() {
+        if name[0] == machineUILabel.text {
+            machineUILabel.text = name[1]
+        } else if name[1] == machineUILabel.text{
+            machineUILabel.text = name[2]
+        } else {
+            machineUILabel.text = name[2]
+        }
     }
     
-    @IBAction func next() {
-        
+    @IBAction func back() {
+        if name[0] == machineUILabel.text  {
+            machineUILabel.text = name[0]
+        } else if name[1] == machineUILabel.text  {
+            machineUILabel.text = name[0]
+        } else {
+            machineUILabel.text = name[1]
+        }
     }
     
     @IBAction func first() {
